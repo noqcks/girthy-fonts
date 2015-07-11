@@ -1,7 +1,35 @@
 extends layout
 
 block content
-  form(name="download", action="/convert/font", method="get")
-    //- input(type="text", name="user_letter")
-    //- input(type="hidden" name="constant_letter" value="A_")
-    input(type="submit", value="DOWNLOAD")
+    //- form(name="download", action="/convert/font", method="get")
+    //-     //- input(type="text", name="user_letter")
+    //-     //- input(type="hidden" name="constant_letter" value="A_")
+    //-     input(type="submit", value="DOWNLOAD")
+
+    .nav
+        .widthsBox
+            h6 Widths
+        .downloadBox
+            h6 Download
+        .aboutBox
+            h6 Info
+
+    .aboutSection.winH
+        .fader
+        .discWrap
+            .disc
+                h3.no-margin-top Mean Width
+                h4 A real time research experiment to find the prefered optical width for a classical proportion typeface. Unlike modern proportions, the classical model uses expressive widths for its primary glyphs. Many argue this aides legibility by giving the user an additional distinguishing quality between glyphs. By filing out what you believe the above boxes to be this application will adjust the actual widths of letters and come a step closer to the ideal letter width on every submission.
+                    br
+                    br
+                    | Find other projects at 
+                    a(href="http://quitetype.com", target="_blank") QuiteType
+                    | .
+
+    .tester.container
+        .real-text.row.winHalf90
+        .what-text.row.winHalf90
+
+    a(href="#").h3.checkIt Check it!
+
+    a(href="/").h3.next Next!
