@@ -304,6 +304,38 @@ a.checkIt{
     	transform: rotate(180deg);
     }	
 }
+// .nav{
+// 	transition: all .5s;
+// 	@include m("max", $bp-small){
+// 	    height: 50px; 
+// 	    background: $color-white;
+// 	    color: $color-primary;
+// 		position: absolute;
+// 		opacity: .5;
+// 		transition: all .5s;
+// 	    &:hover{
+// 	    	opacity: 1;
+// 	    	transition: all .5s;
+// 	    }
+// 		:before {
+// 			border-width: 20px 15px 0px 15px;
+// 	    	left: 50%;
+// 	    	margin-left: -15px;
+// 		}
+	
+// 		.aboutBox, .downloadBox, .widthsBox{
+// 		    width: auto;
+// 		    height: auto;
+// 		    background: none;
+// 		    position: relative;
+// 		    opacity: 1;
+// 			:before {
+// 			   display: none;
+// 			}
+// 		}
+// 	}
+// }
+
 
 @-webkit-keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {

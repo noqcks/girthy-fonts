@@ -13350,7 +13350,7 @@ a.checkIt {
   }
 }
 /* line 260, ../components/_global.scss */
-.aboutBox :before {
+.aboutBox:before {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -13381,7 +13381,7 @@ a.checkIt {
   }
 }
 /* line 279, ../components/_global.scss */
-.downloadBox :before {
+.downloadBox:before {
   border-width: 20px 15px 0px 15px;
   left: 50%;
   margin-left: -15px;
@@ -13414,11 +13414,53 @@ a.checkIt {
   }
 }
 /* line 302, ../components/_global.scss */
-.widthsBox :before {
+.widthsBox:before {
   right: 0;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+/* line 307, ../components/_global.scss */
+.nav {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+@media (max-width: 600px) {
+  /* line 307, ../components/_global.scss */
+  .nav {
+    height: 50px;
+    background: #ffffff;
+    color: #0074d9;
+    position: absolute;
+    opacity: .5;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  /* line 316, ../components/_global.scss */
+  .nav:hover {
+    opacity: 1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  /* line 320, ../components/_global.scss */
+  .nav:before {
+    border-width: 20px 15px 0px 15px;
+    left: 50%;
+    margin-left: -15px;
+  }
+  /* line 326, ../components/_global.scss */
+  .nav .aboutBox, .nav .downloadBox, .nav .widthsBox {
+    width: auto;
+    height: auto;
+    background: none;
+    position: relative;
+    opacity: 1;
+  }
+  /* line 332, ../components/_global.scss */
+  .nav .aboutBox :before, .nav .downloadBox :before, .nav .widthsBox :before {
+    display: none;
+  }
 }
 
 @-webkit-keyframes bounceIn {
@@ -13487,13 +13529,13 @@ a.checkIt {
     transform: scale3d(1, 1, 1);
   }
 }
-/* line 388, ../components/_global.scss */
+/* line 420, ../components/_global.scss */
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
 }
 
-/* line 394, ../components/_global.scss */
+/* line 426, ../components/_global.scss */
 .aboutSection {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -13509,7 +13551,7 @@ a.checkIt {
   padding: 2em;
   z-index: 2;
 }
-/* line 407, ../components/_global.scss */
+/* line 439, ../components/_global.scss */
 .aboutSection .fader {
   position: fixed;
   z-index: 2;
@@ -13522,7 +13564,7 @@ a.checkIt {
   background: rgba(39, 39, 39, 0.25);
   cursor: pointer;
 }
-/* line 419, ../components/_global.scss */
+/* line 451, ../components/_global.scss */
 .aboutSection .discWrap {
   pointer-events: none;
   z-index: 3;
@@ -13531,7 +13573,7 @@ a.checkIt {
   vertical-align: middle;
   margin: 0 auto;
 }
-/* line 426, ../components/_global.scss */
+/* line 458, ../components/_global.scss */
 .aboutSection .discWrap .disc {
   color: #272727;
   border-radius: 5px;
@@ -13542,18 +13584,18 @@ a.checkIt {
   box-shadow: 1em 1em rgba(39, 39, 39, 0.2);
 }
 @media (max-width: 992px) {
-  /* line 426, ../components/_global.scss */
+  /* line 458, ../components/_global.scss */
   .aboutSection .discWrap .disc {
     max-width: 700px;
   }
 }
 @media (max-width: 768px) {
-  /* line 426, ../components/_global.scss */
+  /* line 458, ../components/_global.scss */
   .aboutSection .discWrap .disc {
     max-width: 600px;
   }
 }
-/* line 439, ../components/_global.scss */
+/* line 471, ../components/_global.scss */
 .aboutSection .discWrap .disc h3 {
   padding: 40px 20px 10px;
   background-color: rgba(255, 255, 255, 0.75);
@@ -13561,7 +13603,7 @@ a.checkIt {
   border-radius: 5px 5px 0 0;
   margin: 0;
 }
-/* line 446, ../components/_global.scss */
+/* line 478, ../components/_global.scss */
 .aboutSection .discWrap .disc h4 {
   margin: 0;
   background: #ffffff;
@@ -13570,26 +13612,26 @@ a.checkIt {
   border-radius: 0 0 5px 5px;
 }
 @media (max-width: 600px) {
-  /* line 446, ../components/_global.scss */
+  /* line 478, ../components/_global.scss */
   .aboutSection .discWrap .disc h4 {
     padding-right: 20px;
   }
 }
 
-/* line 460, ../components/_global.scss */
+/* line 492, ../components/_global.scss */
 .about .aboutSection {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 1;
   visibility: visible;
 }
-/* line 465, ../components/_global.scss */
+/* line 497, ../components/_global.scss */
 .about .aboutSection .disc {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
 }
 
-/* line 475, ../components/_global.scss */
+/* line 507, ../components/_global.scss */
 .loaded .loader {
   opacity: 0;
   visibility: hidden;
